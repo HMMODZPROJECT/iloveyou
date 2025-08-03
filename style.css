@@ -1,0 +1,55 @@
+body {
+  background-color: pink;
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+.envelope {
+  font-size: 24px;
+  background-color: white;
+  border: 2px solid red;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.envelope:hover {
+  background-color: #ffe6e6;
+}
+
+.message {
+  margin-top: 30px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid red;
+  animation: fadeIn 2s ease-in;
+}
+
+.hidden {
+  display: none;
+}
+
+.love-text {
+  font-size: 28px;
+  color: red;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.8; }
+  50% { transform: scale(1.1); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.8; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

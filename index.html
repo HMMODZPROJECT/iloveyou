@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Untukmu ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="envelope" onclick="showMessage()">
+      💌 Klik untuk buka surat
+    </div>
+    
+    <div id="message" class="message hidden">
+      <p>Hai kamu...</p>
+      <p>Aku cuma mau bilang satu hal:</p>
+      <p class="love-text">Aku suka sama kamu ❤️</p>
+      <p>Mau gak jadi pacarku? 😊</p>
+
+      <!-- Bagian kontak -->
+      <div class="contact">
+        <h3>Hubungi aku ya 💬</h3>
+        <p>📱 Telegram: <a href="https://t.me/hmmodzvipuser" target="_blank">hmmodz tampan</a></p>    
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function showMessage() {
+    document.getElementById('message').classList.remove('hidden');
+  }
+</script>
+</html>
